@@ -184,8 +184,8 @@
 
             <!-- portfolio buttons -->
             <div class="d-flex justify-content-center mb-3" id="portfolio-buttons-div">
-                <a class="btn btn-primary px-5 py-2 m-2" onclick="makeSelected(this)">Casino</a>
-                <a class="btn btn-primary px-3 py-2 m-2" onclick="makeSelected(this)">Dugout burguer</a>
+                <a class="btn btn-primary px-5 py-2 m-2 selected" onclick="makeSelected(this)" id="show-casino">Casino</a>
+                <a class="btn btn-primary px-3 py-2 m-2" onclick="makeSelected(this)" id="show-dugout">Dugout burguer</a>
             </div>
             <!-- Portfolio projects -->
             <div id="portfolio-projects" class="container p-0 mx-0">
@@ -206,7 +206,7 @@
                     </div>
                 </div>
                 <!-- Dugout -->
-                <div id="dugout" class="row">
+                <div id="project-dugout" class="row d-none">
                     <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8 m-0">
                         <img src="static/images/websiteImgs/gifBurger.png" alt="" class="img-fluid">
                     </div>
