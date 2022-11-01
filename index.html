@@ -80,7 +80,7 @@
 
     <!-- Header -->
     <header class="px-5">
-        <div class="card mb-3" style="max-width: 95%;border: none;"  style="background-color: white;">
+        <div class="card mb-3" style="max-width: 95%;border: none;" style="background-color: white;">
             <div class="row g-0">
                 <div class="col-md-5 pt-5">
                     <div class="card-body">
@@ -104,9 +104,7 @@
     <!-- Header -->
 
     <!-- Services title -->
-    <div class="d-flex justify-content-center mt-3 mb-5">
-        <h5>Our services</h5>
-    </div>
+    <h4 class="text-center mb-4">Our services</h4>
     <!-- Services title -->
 
     <div class="container" id="services">
@@ -178,35 +176,54 @@
                 </div>
             </div>
 
+            <!-- Portfolio title-->
 
+            <h4 class="text-center mt-4">Portfolio</h4>
+
+            <h4 class="text-center text-secondary mb-4">Here's a peek of what we have done</h4>
+
+            <!-- portfolio buttons -->
+            <div class="d-flex justify-content-center mb-3" id="portfolio-buttons-div">
+                <a class="btn btn-primary px-5 py-2 m-2" onclick="makeSelected(this)">Casino</a>
+                <a class="btn btn-primary px-3 py-2 m-2" onclick="makeSelected(this)">Dugout burguer</a>
+            </div>
+            <!-- Portfolio projects -->
+            <div id="portfolio-projects" class="container p-0 mx-0">
+                <!-- Casino -->
+                <div id="project-casino" class="row">
+                    <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8">
+                        <img src="static/images/websiteImgs/imgCasino1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-sm-12 col-md-4 ">
+                        <div class="row mt-3">
+                            <div class="col">
+                                <img src="static/images/websiteImgs/imgCasino2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col">
+                                <img src="static/images/websiteImgs/imgCasino3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dugout -->
+                <div id="dugout" class="row">
+                    <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8 m-0">
+                        <img src="static/images/websiteImgs/gifBurger.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-sm-12 col-md-4 p-0 align-self-center">
+                            <h4 class="">Experience it for yourself, try <a href="https://the-dugout.netlify.app/" class="link">Live demo</a></h4>
+                    </div>
+                </div>
+
+            </div>
 
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     </div>
 
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
