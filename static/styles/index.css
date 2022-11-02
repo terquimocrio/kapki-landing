@@ -15,25 +15,45 @@
 }
 
 #services .card:hover {
-    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.10);
-    -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary{
-    background-color: #03BB85 ;
+.btn-primary {
+    background-color: #03bb85;
     border: none;
 }
-.btn-primary:hover{
-    background-color: #F0FDF9 ;
-    color: #1D1D1B;
-} 
-
-.selected{
-    background-color: #F0FDF9 ;
-    color: #1D1D1B;
+.btn-primary:hover {
+    background-color: #f0fdf9;
+    color: #1d1d1b;
 }
 
-.link{
-    color:#03BB85;
+.selected {
+    background-color: #f0fdf9;
+    color: #1d1d1b;
+}
+
+.link {
+    color: #03bb85;
+}
+
+.link--mail {
+    color: #5638a9;
+}
+
+footer {
+    /* background-color: #FCFCFE; */
+    background-color: #fcfcfe;
+}
+
+.nav-link:hover {
+    color: #03bb85 !important;
+}
+
+@media (max-width: 576px) {
+    #center-1{
+        text-align: center;
+    }
+
 }

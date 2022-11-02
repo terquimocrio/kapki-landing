@@ -18,7 +18,7 @@
     <title>Kapki - Home page</title>
 </head>
 
-<body class="px-3">
+<body class="px-0">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Container wrapper -->
@@ -35,10 +35,9 @@
             </a>
 
             <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Collapsible wrapper -->
@@ -52,22 +51,22 @@
                 <div class="d-flex align-items-center">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">¡Hi!</a>
+                            <a class="nav-link" href="#home">¡Hi!</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -78,8 +77,9 @@
     </nav>
     <!-- Navbar -->
 
+
     <!-- Header -->
-    <header class="px-5">
+    <header class="px-5" id="home">
         <div class="card mb-3" style="max-width: 95%;border: none;" style="background-color: white;">
             <div class="row g-0">
                 <div class="col-md-5 pt-5">
@@ -104,7 +104,7 @@
     <!-- Header -->
 
     <!-- Services title -->
-    <h4 class="text-center mb-4">Our services</h4>
+    <h4 class="text-center mb-4" id="services">Our services</h4>
     <!-- Services title -->
 
     <div class="container" id="services">
@@ -178,14 +178,16 @@
 
             <!-- Portfolio title-->
 
-            <h4 class="text-center mt-4">Portfolio</h4>
+            <h4 class="text-center mt-4" id="portfolio">Portfolio</h4>
 
             <h4 class="text-center text-secondary mb-4">Here's a peek of what we have done</h4>
 
             <!-- portfolio buttons -->
             <div class="d-flex justify-content-center mb-3" id="portfolio-buttons-div">
-                <a class="btn btn-primary px-5 py-2 m-2 selected" onclick="makeSelected(this)" id="show-casino">Casino</a>
-                <a class="btn btn-primary px-3 py-2 m-2" onclick="makeSelected(this)" id="show-dugout">Dugout burguer</a>
+                <a class="btn btn-primary px-5 py-2 m-2 selected" onclick="makeSelected(this)"
+                    id="show-casino">Casino</a>
+                <a class="btn btn-primary px-3 py-2 m-2" onclick="makeSelected(this)" id="show-dugout">Dugout
+                    burguer</a>
             </div>
             <!-- Portfolio projects -->
             <div id="portfolio-projects" class="container p-0 mx-0">
@@ -211,7 +213,8 @@
                         <img src="static/images/websiteImgs/gifBurger.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-lg-4 col-xl-4 col-sm-12 col-md-4 p-0 align-self-center">
-                            <h4 class="">Experience it for yourself, try <a href="https://the-dugout.netlify.app/" class="link">Live demo</a></h4>
+                        <h4 class="">Experience it for yourself, try <a href="https://the-dugout.netlify.app/"
+                                class="link">Live demo</a></h4>
                     </div>
                 </div>
 
@@ -222,6 +225,37 @@
     </div>
     </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid pt-5 mx-0" id="contact">
+        <div class="container">
+            <div class="row mt-5 mx-0">
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 mt-5">
+                    <center>
+
+                        <img src="static/svg/logo.svg" alt="" class="img-fluid">
+                    </center>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 mt-5">
+                    <div class="row">
+                        <div class="mx-sm-5" id="center-1">
+                            <h4 class="ms-3">Why wait for change?</h4>
+                            <div class="ms-3">Send an email to:</div>
+                            <div class="ms-3">
+                                <a href="mailto:support@kapki.com" class="link--mail">support@kapki.com</a>
+                            </div>
+                            <p class="ms-3">And we'll help you right away.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-5 mb-0 d-flex flex-column justify-content-end">
+                    <img src="static/images/websiteImgs/imgFooter.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="static/js/main.js"></script>
 </body>
