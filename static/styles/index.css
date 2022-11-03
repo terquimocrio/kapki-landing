@@ -1,9 +1,90 @@
-.img-responsive {
-    width: 90px;
-    height: 90px;
-    align-self: center;
-    margin-top: 35px;
+@font-face {
+    font-family: workSans;
+    src: url(../fonts/WorkSans-Regular.ttf);
 }
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: workSans;
+    font-weight: 500;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h3 {
+    font-size: 3vh;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.top-div{
+    margin-top: 5vh;
+}
+
+.middle-div {
+    margin-bottom: 5vh;
+}
+
+.bottom-div {
+    margin-bottom: 5vh;
+}
+
+.card > div {
+    width: 100%;
+    height: 100%;
+}
+
+.card > div > .img-responsive {
+    border-radius: 50%;
+}
+
+.card:hover > div > .img-responsive {
+    background-color: #E0FAF8;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #E0FAF8;
+    transition: 1s ease;
+}
+
+.card:hover > .middle-div {
+    margin-bottom: 0px;
+}
+
+.card:hover > div > h3 {
+    font-size: 2.5vh;
+    transition: .7s ease;
+}
+
+.ocultar-mostrar {
+    display: none !important; 
+}
+
+.card:hover > .ocultar-mostrar {
+    display: block !important;
+    transition: .7s ease;
+}
+
+.card:hover > .ocultar-mostrar > p {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.img-responsive {
+    align-self: center;
+    max-width: 25%;
+}   
 
 #mobile {
     width: 50px;
@@ -12,12 +93,19 @@
 #services .card {
     border: none;
     background-color: #fcfcfe;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item {
+    height: 40vh;
 }
 
 #services .card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    transition: 1s ease;
 }
 
 .btn-primary {
