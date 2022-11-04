@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Container wrapper -->
-        <div class="container-fluid">
+        <div class="container-fluid navbar-separation">
             <!-- Navbar brand -->
             <a class="navbar-brand me-2" href="">
                 <div style="width: 100px; height: 100px;">
@@ -51,27 +51,35 @@
                 </ul>
                 <!-- Left links -->
 
-                <div class="d-flex align-items-center">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">¡Hi!</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">¡Hi!</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- Collapsible wrapper -->
@@ -95,8 +103,6 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-
-
 
                     <img src="static/images/header-img.png" class="img-fluid rounded-start" alt="Header image">
 
@@ -139,16 +145,13 @@
                 </div>
             </div>
             <div class="prevent-select gallery-item col-lg-4 col-md-4 col-sm-6 col-xs-6 filter hdpe mb-4 d-flex align-items-stretch">
-                <div class="card">
-
+                <div class="card ">
                     <div class="d-flex justify-content-center align-items-center top-div">
-                        <img src="static/images/websiteImgs/imgMobile.png" class="img-responsive" id="mobile">
+                        <img src="static/images/websiteImgs/imgMobile.png" class="img-responsive">
                     </div>
-                
                     <div class="d-flex justify-content-center align-items-center middle-div">
                         <h3 class="card-text text-center fw-bold">Mobile Apps</h3>
                     </div>
-
                     <div class="ocultar-mostrar d-flex justify-content-center align-items-center bottom-div">
                         <p class="text-center px-2">We can build native apps for Android and IOS with all the functions that you need.</p>
                     </div>
@@ -207,9 +210,9 @@
 
             <!-- portfolio buttons -->
             <div class="d-flex justify-content-center mb-3" id="portfolio-buttons-div">
-                <a class="btn btn-primary px-5 py-2 m-2 selected" onclick="makeSelected(this)"
+                <a class="btn btn-primary px-5 py-2 m-2 selected d-flex align-items-center" onclick="makeSelected(this)"
                     id="show-casino">Casino</a>
-                <a class="btn btn-primary px-3 py-2 m-2" onclick="makeSelected(this)" id="show-dugout">Dugout
+                <a class="btn btn-primary px-3 py-2 m-2 d-flex align-items-center" onclick="makeSelected(this)" id="show-dugout">Dugout
                     burguer</a>
             </div>
             <!-- Portfolio projects -->

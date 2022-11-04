@@ -108,6 +108,11 @@ h3 {
     transition: 1s ease;
 }
 
+.nav-item {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
 .btn-primary {
     background-color: #03bb85;
     border: none;
@@ -128,6 +133,12 @@ h3 {
 
 .link--mail {
     color: #5638a9;
+}
+
+.navbar-separation {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
 }
 
 footer {
